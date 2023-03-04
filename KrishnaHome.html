@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISKCON</title>
+    <!-- <link rel="stylesheet" href="krishna.css"> -->
+    <style>
+        /* CSS Reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("https://cdn.pixabay.com/photo/2016/11/18/13/53/idol-1834688_960_720.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        header {
+            /* background-color: aqua; */
+            position: absolute;
+            width: 1535px;
+            top: 0px;
+            margin: 0px;
+        }
+
+        .left {
+            display: inline;
+            position: absolute;
+            top: 6px;
+            left: 63px;
+        }
+
+        .left img {
+            width: 75px;
+        }
+
+        .mid {
+            width: 42%;
+            margin: 5px auto;
+        }
+
+        .right {
+            display: inline;
+            position: absolute;
+            top: 22px;
+            right: 87px;
+        }
+
+        .right button{
+            padding: 0px 11px 4px 11px;
+            border-radius: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            font-size: 17px;
+            background-color: goldenrod;
+            cursor: pointer;
+        }
+
+        .right button a
+        {
+            color: black;
+            text-decoration: none;
+        }
+        .right button:hover {
+            background-color: gold;
+        }
+
+        .right button:active {
+            background-color: purple;
+        }
+
+        .navbar li {
+            display: inline-block;
+            padding: 0px 12px;
+            margin: 0px 21px;
+        }
+
+        .navbar a {
+            font-size: 24px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .navbar a:active {
+            color: purple;
+            text-decoration: underline;
+        }
+
+        .container {
+            border: 2px solid black;
+            border-radius: 30px;
+            position: absolute;
+            top: 170px;
+            left: 94px;
+            width: 381px;
+            height: 282px;
+            text-align: center;
+        }
+
+        .form input {
+            margin: 5px auto;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .container h4 {
+            font-size: 24px;
+        }
+
+        .container button {
+            background-color: #a29a9a;
+            font-size: 15px;
+            margin: 14px;
+            border-radius: 6px;
+        }
+
+        .container button:hover {
+            background-color: grey;
+        }
+
+        .container button:active {
+            background-color: purple;
+        }
+
+        #activeTab {
+            color: rgb(117, 4, 117);
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <a href="krishnaHome.html">
+                <img src="https://www.pngfind.com/pngs/m/34-347088_ios-appapp-store-iskcon-logo-png-transparent-png.png"
+                    alt="ISKCON">
+            </a>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="krishnaHome.html" id="activeTab">Home</a></li>
+                    <li><a href="krishnaAbout.html">About Us</a></li>
+                    <li><a href="https://iskconnews.org/">News</a></li>
+                    <li><a href="https://centres.iskcon.org/">Centres</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button>
+                <a href="https://www.iskconcommunications.org/contact-us" target="_blank">Contact Us</a>
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h4>Register for Gita Workshop:</h4>
+        <form action="backend.php" class="form">
+            <div>
+                <input type="text" name="name" placeholder="Enter your Name">
+            </div>
+            <div>
+                <input type="text" name="place" placeholder="Enter your Locality">
+            </div>
+            <div>
+                <input type="text" name="Phone" placeholder="Enter your Mobile no.">
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="Enter your Email-id">
+            </div>
+            <div>
+                <button type="submit">
+                    Submit
+                </button>
+                <button type="reset">
+                    Reset
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
